@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'pt-BR' },
-      title: 'Projeto Nuxt - Cadastro de Membros',
+      title: 'Cadastro de Membros',
       meta: [
         { name: 'description', content: 'Aplicação acadêmica de cadastro de membros com Nuxt 3, Vue 3 e TypeScript.' }
       ]

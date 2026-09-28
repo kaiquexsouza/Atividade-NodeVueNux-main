@@ -1,13 +1,12 @@
 <script setup lang="ts">
-useHead({ title: 'Início | Projeto Nuxt - Cadastro de Membros' })
+useHead({ title: 'Início | Cadastro de Membros' })
 </script>
 
 <template>
   <section class="card hero">
-    <h1>Projeto Nuxt - Cadastro de Membros</h1>
+    <h1>Cadastro de membros</h1>
     <p class="hero__descricao">
-      Aplicação desenvolvida para demonstrar conceitos fundamentais de Vue.js e Nuxt,
-      incluindo reatividade, componentização, roteamento e formulários.
+      Aplicação desenvolvida para a atividade web do professor Alison, usando o Vue.js e Nuxt.
     </p>
 
     <NuxtLink to="/cadastro" class="btn btn--primario">

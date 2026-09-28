@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { CadastroErrors, CadastroForm } from '~/types/cadastro'
 
-useHead({ title: 'Cadastro | Projeto Nuxt - Cadastro de Membros' })
+useHead({ title: 'Cadastro | Cadastro de Membros' })
 
 const BIO_MAX = 300
 
@@ -33,7 +33,9 @@ const opcoesInteresses = [
   'UI/UX',
   'Banco de Dados',
   'DevOps',
-  'Inteligência Artificial'
+  'DevSecOps',
+  'Inteligência Artificial',
+  'Jogos'
 ]
 
 // Estado reativo do formulário (ligado aos campos via v-model)
@@ -182,7 +184,7 @@ function novoCadastro() {
             v-model="form.nome"
             type="text"
             name="nome"
-            placeholder="Ex.: Maria da Silva"
+            placeholder="Ex: Fulano da silva"
             autocomplete="name"
             :aria-invalid="!!errors.nome"
             :aria-describedby="errors.nome ? 'nome-erro' : undefined"
@@ -195,7 +197,7 @@ function novoCadastro() {
             v-model="form.email"
             type="email"
             name="email"
-            placeholder="Ex.: maria@email.com"
+            placeholder="fulano@gmail.com"
             autocomplete="email"
             :aria-invalid="!!errors.email"
             :aria-describedby="errors.email ? 'email-erro' : undefined"
